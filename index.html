@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>IMC</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="tittleConteiner">
+            <h1>Calculadora de IMC</h1>
+        </div>
+        <div class="inputConteiner">
+                         
+            <!--Input peso-->
+            <label for="peso">Peso</label>
+            <input type="text" id="peso" class="inputPeso">
+             <!--Input Altura-->
+            <label for="altura">Altura em Metros</label>
+            <input type="text" id="altura" class="inputAltura">             
+              <!--Botão-->
+              <button onclick="calcular()" class="btn" >Calcular IMC</button>
+
+              
+        </div>
+        <div id="resultConteiner" class="resultConteiner hide">
+            <!--resultado-->
+            <span class="tittleResult">Seu IMC é:</span>
+            <span id="result" class="result">00</span>
+            <span class="legend">
+               <br> Menor que 18,5 = abaixo do peso. <br>
+                Entre 18,5 e 24,9 = peso normal. <br>
+                Entre 25 e 29,9 = sobrepeso. <br>
+                Entre 30 e 34,99 = obesidade grau I. <br>
+                Entre 35 e 39,99 = obesidade grau II (severa). <br>
+                Acima de 40 = obesidade grau III (mórbida). <br>
+            </span>
+        </div>
+
+    </div>
+    
+
+    <script src="/script.js"></script>
+</body>
+</html>
